@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+body {
+    font-family: "Roboto","Arial",sans-serif;
+}
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+height:56px;
+}
+.left-section {
+display:flex; 
+align-items:center;
+
+}
+.left-section img{
+width:150px;
+  
+}
+.left-section .logo{
+margin-left:16px;
+margin-right:5px; 
+}
+
+.mid-section{
+display:flex;
+align-items:center;
+Margin-left:50px;
+  
+}
+.mid-section form input{
+Width:400px;
+Height:35px;
+border:3px solid #dcdeda;
+border-radius:4px 0px 0px 4px;
+Padding:5px;
+  
+}
+.mid-section form button{
+position:relative;
+Top:5px;
+Left:-2px;
+Height:35px;
+width:36px;
+Border-color:#aaa;
+border-style:solid;
+}
+
+.mid-section .mic{
+border-radius:50%;
+  background-color:#ddd;
+height:36px;
+width:36px;
+Display:flex;
+  Justify-content:center;
+align-items:center;
+position:relative;
+Top:1px;
+ Left:2px;
+
+}
+
+.right-section{
+display:flex;
+Align-items:center;
+/*margin:10px;
+  Color:#000000;*/
+}
+.right-section a{
+margin:10px 5px;
+color:#000000;
+
+
+  
+}
+
+/*start-aside*/
+.content-area{
+display:flex;
+Height:calc(100vh - 56px);
+Background-color:#f9f9f9;
+  
+}
+.content-area aside {
+Height:100%;
+Width:280px;
+Background-color:#fff;
+Overflow-y:auto;
+
+}
+
+aside nav {
+Display:flex;
+flex-direction:column;
+  
+Width:100%;
+Margin:15px 0px ;
+Padding-right:10px;
+ 
+  
+}
+
+Nav .nav-link{
+Display:flex;
+align-content:center;
+Padding:10px 16px ;
+text-decoration:none;
+  background-color:#f9f9f9 /80%;
+  
+} 
+#dd{
+  Background-color:#eee
+} 
+Nav .nav-link:hover{
+Background-color:#eee
+
+  
+}
+
+.nav-link span{
+Margin-left:20px;
+Font-size:1.4em;
+font-weight: 400px;
+Color:#000;
+line-height: 2em;
+text-decoration:none;
+  
+}
+Nav .material-icons{
+Color:#000;
+  
+} 
+Nav .material-icons-outlined{
+Color:#000;
+  
+} 
+
+hr{
+  Margin:10px 0px;
+  
+}
+
+Nav .text-top{
+Font-size:1.4em;
+Font-weight:31.25em;
+Padding:8px 16px;
+Color:#606060;
+Text-transform:uppercase;
+
+  
+}
+Nav img{
+Height:31px;
+Width:27px;
+  border-radius:50%;
+  
+}
+main{
+Width:100%;
+Margin:35px 15px;
+border-top:1px solid #ddd;
+overflow-x:auto;
+}
+
+.contenr{
+display:flex;
+justify-content:space-around;
+flex-flow:row wrap;
+  Width:100%;
+  
+}
+
+.contenr .video{
+/*Background-color:purple;*/
+flex-direction:column;
+Height:250px;
+  Width:278px;
+margin-bottom:12px;
+
+} 
+.video-img{
+margin-bottom:9px;
+  
+}
+.video-img img{
+Height:160px;
+Width:100%;
+  
+}
+.discrebtion{
+display:flex;
+/* align-items:center;
+justify-content:column; */
+  
+}
+.dis-img img{
+Height:31px;
+Width:27px;
+border-radius:50%;
+  margin-left:8px;
+  Position:relative;
+Top:18px;
+/*Right:15px;*/
+
+
+}
+.text{
+display:flex;
+flex-direction:column;
+
+
+  
+}
+.dic-title .title{
+color:#000;
+Font-size:17.5px;
+Font-weight:500;
+text-decoration:none;
+Max-width:278px;
+Margin-bottom:4px;
+Overflow:hidden;
+
+
+  
+/*padding-bottom:120px;*/
+/*   position:relative;
+bottom:5px */
+
+
+  
+}
+.text .dic-text{
+Color:#000;
+text-decoration:none;
+Font-size:13px;
+Font-weight:400;  
+Position:relative;
+  Top:5px;
+Left:13px 
+
+} 
+
+/* start midea qure*/
+
+@media(min-width:991px){
+.foter{
+
+Display:none;
+  
+}
+
+
+
+}
+
+
+@media(min-width:760px)and (max-width:990px){
+
+.foter .nav-foter{
+Display:flex;
+flex-direction:row;
+Color:#234256;
+/* align-items:center; */
+/*background-color:purple;*/
+justify-content:space-around;
+  
+}
+
+#foter{
+Position:sticky;
+  
+}
+.right-section{
+Display:none;
+
+}
+.mid-section{
+Margin-right:15px;
+  
+}
+aside{
+Display:none;
+  
+}
+#none{
+  Display:none;
+}
+  
+} 
+
+@media(max-width:750px){
+
+.foter .nav-foter{
+Display:flex;
+flex-direction:row;
+Color:#234256;
+/* align-items:center; */
+/*background-color:purple;*/
+justify-content:space-around;
+  
+}
+
+#foter{
+Position:sticky;
+  
+}
+.right-section{
+Display:none;
+
+}
+.mid-section{
+Margin-right:15px;
+  
+}
+aside{
+Display:none;
+  
+}
+#none{
+  Display:none;
+}
+
+.mid-section form input{
+Display:none;
+  
+}
+  
+/* aside{
+Display:none;
+
+  
+}
+
+  .foter .nav-foter{
+Display:flex;
+flex-direction:row;
+Color:#234256;
+/* align-items:center; 
+background-color:purple;
+Position:;
+  
+}
+  #foter{
+Position:sticky;
+  
+} */
+
+ } 
+
+@media(max-width:600px){
+#non{
+Display:none;
+  
+}
+
+/* end midea qure*/
+@media (prefers-color-scheme: dark) {
+
+ 
+}
+ 
+  
+
+
